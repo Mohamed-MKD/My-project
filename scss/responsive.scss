@@ -1,0 +1,138 @@
+
+@media (min-width: 768px) {
+    .bottom-wrapper {
+            .container {
+                width: 100%;
+                .notify-me {
+                    width: 35%;
+                    .subscribe-form {
+                        .form-control {
+                            width: 200px;
+                        }
+                    }
+                }
+                .copyright {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+    }
+}
+
+@media (min-width: 768px) AND (max-width: 991px) {
+        .bottom-wrapper {
+            .container {
+                width: 100%;
+                .notify-me {
+                    width: 50%;
+                    bottom: 50px;
+                    .subscribe-form {
+                        .form-control {
+                            width: 200px;
+                        }
+                    }
+                }
+                .more-info {
+                    bottom: 50px;
+                }
+                .copyright {
+                    top: 50px
+                }
+            }
+    }
+    .count-card {
+        .item {
+            .block { 
+                width: 50%;
+                height: 60%;
+                padding: 0px;
+                .text {
+                    justify-content: flex-start;
+                    h2 {
+                        font-size: 35px;
+                    }
+                    .countdown {
+                        
+                        .countdown-container {
+                            flex-basis: 40px;
+                            height: 70px;
+                            margin: 7px;
+                            padding: 5px;
+                            
+                            .days-top:before {
+                                bottom: 31px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+  
+}
+
+/* Smart phones And Tablets */
+@media (max-width: 767px) {
+    .count-card {
+        .item {
+            .block { 
+                width: 100%;
+                height: 60%;
+                padding: 0px;
+                .text {
+                    justify-content: flex-start;
+                    h2 {
+                        font-size: 20px;
+                    }
+                    .countdown {
+                        
+                        .countdown-container {
+                            flex-basis: 20px;
+                            height: 60px;
+                            margin: 2px;
+                            padding: 2px;
+                            font-size: 15px;
+                            
+                            .days-top:before {
+                                bottom: 31px;
+                                height: 1px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-wrapper {
+            .container {
+                .row {
+                    display: flex;
+                    flex-direction: column;
+                    .notify-me {
+                        order: 1;
+                        .subscribe-form {
+                            .form-control {
+                                width: 150px;
+                                border-right: 1px solid #666;
+                            }
+                        }
+                    }
+                    .copyright {
+                        padding-left: 0;
+                        padding-right: 0;
+                        order: 3;
+                    }
+                    .more-info {
+                        order: 2;
+                        margin-top: 20px;
+                        form {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+    }
+}

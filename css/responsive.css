@@ -1,0 +1,77 @@
+@media (min-width: 768px) {
+  .bottom-wrapper .container {
+    width: 100%; }
+    .bottom-wrapper .container .notify-me {
+      width: 35%; }
+      .bottom-wrapper .container .notify-me .subscribe-form .form-control {
+        width: 200px; }
+    .bottom-wrapper .container .copyright {
+      padding-left: 0;
+      padding-right: 0; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .bottom-wrapper .container {
+    width: 100%; }
+    .bottom-wrapper .container .notify-me {
+      width: 50%;
+      bottom: 50px; }
+      .bottom-wrapper .container .notify-me .subscribe-form .form-control {
+        width: 200px; }
+    .bottom-wrapper .container .more-info {
+      bottom: 50px; }
+    .bottom-wrapper .container .copyright {
+      top: 50px; }
+
+  .count-card .item .block {
+    width: 50%;
+    height: 60%;
+    padding: 0px; }
+    .count-card .item .block .text {
+      justify-content: flex-start; }
+      .count-card .item .block .text h2 {
+        font-size: 35px; }
+      .count-card .item .block .text .countdown .countdown-container {
+        flex-basis: 40px;
+        height: 70px;
+        margin: 7px;
+        padding: 5px; }
+        .count-card .item .block .text .countdown .countdown-container .days-top:before {
+          bottom: 31px; } }
+/* Smart phones And Tablets */
+@media (max-width: 767px) {
+  .count-card .item .block {
+    width: 100%;
+    height: 60%;
+    padding: 0px; }
+    .count-card .item .block .text {
+      justify-content: flex-start; }
+      .count-card .item .block .text h2 {
+        font-size: 20px; }
+      .count-card .item .block .text .countdown .countdown-container {
+        flex-basis: 20px;
+        height: 60px;
+        margin: 2px;
+        padding: 2px;
+        font-size: 15px; }
+        .count-card .item .block .text .countdown .countdown-container .days-top:before {
+          bottom: 31px;
+          height: 1px; }
+
+  .bottom-wrapper .container .row {
+    display: flex;
+    flex-direction: column; }
+    .bottom-wrapper .container .row .notify-me {
+      order: 1; }
+      .bottom-wrapper .container .row .notify-me .subscribe-form .form-control {
+        width: 150px;
+        border-right: 1px solid #666; }
+    .bottom-wrapper .container .row .copyright {
+      padding-left: 0;
+      padding-right: 0;
+      order: 3; }
+    .bottom-wrapper .container .row .more-info {
+      order: 2;
+      margin-top: 20px; }
+      .bottom-wrapper .container .row .more-info form {
+        display: inline-block; } }
+
+/*# sourceMappingURL=responsive.css.map */

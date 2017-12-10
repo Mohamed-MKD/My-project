@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Ubuntu:400,700,700i");
+body {
+  font-family: 'Ubuntu', sans-serif; }
+
+/* Social links */
+.social-links {
+  padding: 20px; }
+  .social-links ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .social-links ul li {
+      flex-basis: 40px;
+      z-index: 9999; }
+      .social-links ul li i {
+        -webkit-transition: all 0.4s ease-out 0s;
+        -moz-transition: all 0.4s ease-out 0s;
+        -o-transition: all 0.4s ease-out 0s;
+        transition: all 0.4s ease-out 0s;
+        color: #fff; }
+        .social-links ul li i:hover {
+          -webkit-transform: scale(1.3);
+          -moz-transform: scale(1.3);
+          -o-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          transform: scale(1.3); }
+
+/* End social links */
+/* Counter Section */
+.count-card {
+  width: 100%;
+  height: auto; }
+  .count-card .item {
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    padding: 0px 20px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; }
+    .count-card .item:hover .bg {
+      opacity: 0.2; }
+    .count-card .item:hover .block {
+      -webkit-box-shadow: 0px 0px 50px #333;
+      -moz-box-shadow: 0px 0px 50px #333;
+      -o-box-shadow: 0px 0px 50px #333;
+      box-shadow: 0px 0px 50px #333; }
+    .count-card .item.active {
+      opacity: 1;
+      visibility: visible; }
+    .count-card .item .bg {
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03);
+      opacity: 1;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; }
+    .count-card .item .blur {
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03);
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      filter: blur(5px);
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; }
+    .count-card .item .block {
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03);
+      -webkit-transition: box-shadow 0.5s ease-in-out 0s;
+      -moz-transition: box-shadow 0.5s ease-in-out 0s;
+      -o-transition: box-shadow 0.5s ease-in-out 0s;
+      transition: box-shadow 0.5s ease-in-out 0s;
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      color: #ffffff;
+      max-width: 800px;
+      overflow: hidden;
+      max-height: 450px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      box-shadow: none; }
+      .count-card .item .block img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px; }
+      .count-card .item .block .circleLight {
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+        top: 0px;
+        left: 0px;
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        background: radial-gradient(circle at 80px 40px, #fff, transparent); }
+      .count-card .item .block .text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        background-position: center;
+        background-attachment: fixed; }
+        .count-card .item .block .text h2 {
+          font-family: 'Oswald', sans-serif;
+          font-size: 50px;
+          margin-bottom: 20px;
+          letter-spacing: 6px;
+          text-shadow: -3px 12px 18px #a2a2a2; }
+        .count-card .item .block .text p {
+          font-size: 30px; }
+        .count-card .item .block .text .countdown {
+          display: flex;
+          padding-top: 20px;
+          margin-bottom: 20px;
+          justify-content: center; }
+          .count-card .item .block .text .countdown .countdown-container {
+            -webkit-transition: all 0.5s ease-in-out 0s;
+            -moz-transition: all 0.5s ease-in-out 0s;
+            -o-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;
+            flex-basis: 200px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            border-radius: 25px 0;
+            margin: 20px;
+            height: 100px;
+            padding: 20px;
+            position: relative;
+            padding-bottom: 60px; }
+            .count-card .item .block .text .countdown .countdown-container:hover {
+              background: #90909045; }
+            .count-card .item .block .text .countdown .countdown-container .days-top:before, .count-card .item .block .text .countdown .countdown-container .hours-top:before, .count-card .item .block .text .countdown .countdown-container .minutes-top:before, .count-card .item .block .text .countdown .countdown-container .seconds-top:before {
+              bottom: 45px;
+              content: "";
+              height: 2px;
+              position: absolute;
+              left: 50%;
+              margin-left: -10px;
+              width: 20px;
+              background: #f3cc29; }
+      .count-card .item .block:hover {
+        box-shadow: 0px 0px 70px #111; }
+        .count-card .item .block:hover .circleLight {
+          opacity: 0.4; }
+  .count-card .navigations {
+    bottom: 0px;
+    width: 100%;
+    position: absolute; }
+    .count-card .navigations .dots {
+      height: 20px;
+      padding: 10px 0px;
+      text-align: center; }
+      .count-card .navigations .dots li {
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle; }
+        .count-card .navigations .dots li + li {
+          margin-left: 10px; }
+        .count-card .navigations .dots li:hover {
+          filter: blur(2px); }
+        .count-card .navigations .dots li.active {
+          width: 15px;
+          height: 15px; }
+          .count-card .navigations .dots li.active:hover {
+            filter: blur(0px); }
+
+/* End Counter Section */
+/* Bottom wrapper */
+.bottom-wrapper {
+  position: absolute;
+  bottom: 20px;
+  width: 100%; }
+  .bottom-wrapper .container {
+    width: 90%; }
+    .bottom-wrapper .container .copyright {
+      color: #fff;
+      font-size: 14px;
+      margin-top: 25px;
+      font-weight: 600; }
+    .bottom-wrapper .container .notify-me .subscribe-form .form-control {
+      padding: 10px 20px;
+      border-radius: 4px 0 0 4px;
+      width: 300px;
+      max-width: 800px;
+      vertical-align: middle;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid #666;
+      border-right: none;
+      border-radius: 0;
+      box-shadow: none;
+      font-weight: 900;
+      outline: medium none;
+      padding: 10px 20px;
+      color: #fff;
+      height: 50px;
+      display: inline-block;
+      margin-right: -4px; }
+    .bottom-wrapper .container .notify-me .subscribe-form button {
+      border: none;
+      border-radius: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #F3CC29;
+      background-color: #383838;
+      vertical-align: middle;
+      height: 50px;
+      border: none;
+      border-radius: 0;
+      height: 50px;
+      outline: none;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      -o-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s; }
+      .bottom-wrapper .container .notify-me .subscribe-form button:hover {
+        color: #383838;
+        background-color: #fff; }
+    .bottom-wrapper .container .more-info button {
+      float: left;
+      background: #f3cc29;
+      color: #000;
+      border-radius: 0;
+      font-weight: 600;
+      outline: none;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      -o-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s; }
+      .bottom-wrapper .container .more-info button:hover {
+        background: #fff;
+        color: #000; }
+
+/* End Bottom wrapper */
+@media (min-width: 768px) {
+  .bottom-wrapper .container {
+    width: 100%; }
+    .bottom-wrapper .container .notify-me {
+      width: 35%; }
+      .bottom-wrapper .container .notify-me .subscribe-form .form-control {
+        width: 200px; }
+    .bottom-wrapper .container .copyright {
+      padding-left: 0;
+      padding-right: 0; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .bottom-wrapper .container {
+    width: 100%; }
+    .bottom-wrapper .container .notify-me {
+      width: 50%;
+      bottom: 50px; }
+      .bottom-wrapper .container .notify-me .subscribe-form .form-control {
+        width: 200px; }
+    .bottom-wrapper .container .more-info {
+      bottom: 50px; }
+    .bottom-wrapper .container .copyright {
+      top: 50px; }
+
+  .count-card .item .block {
+    width: 50%;
+    height: 60%;
+    padding: 0px; }
+    .count-card .item .block .text {
+      justify-content: flex-start; }
+      .count-card .item .block .text h2 {
+        font-size: 35px; }
+      .count-card .item .block .text .countdown .countdown-container {
+        flex-basis: 40px;
+        height: 70px;
+        margin: 7px;
+        padding: 5px; }
+        .count-card .item .block .text .countdown .countdown-container .days-top:before, .count-card .item .block .text .countdown .countdown-container .hours-top:before, .count-card .item .block .text .countdown .countdown-container .minutes-top:before, .count-card .item .block .text .countdown .countdown-container .seconds-top:before {
+          bottom: 31px; } }
+/* Smart phones And Tablets */
+@media (max-width: 767px) {
+  .count-card .item .block {
+    width: 100%;
+    height: 60%;
+    padding: 0px; }
+    .count-card .item .block .text {
+      justify-content: flex-start; }
+      .count-card .item .block .text h2 {
+        font-size: 20px; }
+      .count-card .item .block .text .countdown .countdown-container {
+        flex-basis: 20px;
+        height: 60px;
+        margin: 2px;
+        padding: 2px;
+        font-size: 15px; }
+        .count-card .item .block .text .countdown .countdown-container .days-top:before, .count-card .item .block .text .countdown .countdown-container .hours-top:before, .count-card .item .block .text .countdown .countdown-container .minutes-top:before, .count-card .item .block .text .countdown .countdown-container .seconds-top:before {
+          bottom: 31px;
+          height: 1px; }
+
+  .bottom-wrapper .container .row {
+    display: flex;
+    flex-direction: column; }
+    .bottom-wrapper .container .row .notify-me {
+      order: 1; }
+      .bottom-wrapper .container .row .notify-me .subscribe-form .form-control {
+        width: 150px;
+        border-right: 1px solid #666; }
+    .bottom-wrapper .container .row .copyright {
+      padding-left: 0;
+      padding-right: 0;
+      order: 3; }
+    .bottom-wrapper .container .row .more-info {
+      order: 2;
+      margin-top: 20px; }
+      .bottom-wrapper .container .row .more-info form {
+        display: inline-block; } }
+
+/*# sourceMappingURL=style.css.map */
